@@ -1,0 +1,12 @@
+# Checkov configuration - https://www.checkov.io/
+# Run: checkov -d terraform-vulnerable/ --config-file .checkov.yml
+#      checkov -d terraform-secure/     --config-file .checkov.yml  (expected: all pass)
+framework:
+  - terraform
+output:
+  - cli
+  - json
+output-file-path: checkov-results
+soft-fail: false
+# No blanket skips: the secure stack is expected to pass honestly.
+# Any future skip must name the check id and justify it here.

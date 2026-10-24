@@ -1,0 +1,12 @@
+.env
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+__pycache__/
+*.pyc
+.venv/
+*.pem
+*.key
+alerts.json
+findings.json
